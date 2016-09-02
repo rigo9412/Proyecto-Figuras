@@ -1,0 +1,10 @@
+c:\users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\bin\Debug\DibujarFiguras.exe.config
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\bin\Debug\DibujarFiguras.exe
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\bin\Debug\DibujarFiguras.pdb
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.csprojResolveAssemblyReference.cache
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.Properties.Resources.resources
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.csproj.GenerateResource.Cache
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.exe
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.pdb
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.FabricaDeFiguras.resources
+C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.Grafica.resources

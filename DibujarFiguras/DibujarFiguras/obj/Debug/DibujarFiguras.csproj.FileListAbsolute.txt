@@ -1,8 +1,0 @@
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\bin\Debug\DibujarFiguras.exe.config
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\obj\Debug\DibujarFiguras.csprojResolveAssemblyReference.cache
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\obj\Debug\DibujarFiguras.Properties.Resources.resources
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\obj\Debug\DibujarFiguras.csproj.GenerateResource.Cache
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\bin\Debug\DibujarFiguras.exe
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\bin\Debug\DibujarFiguras.pdb
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\obj\Debug\DibujarFiguras.exe
-C:\Users\rigoberto\Desktop\7 semestre\Prog Avanzada\DibujarFiguras\DibujarFiguras\obj\Debug\DibujarFiguras.pdb
