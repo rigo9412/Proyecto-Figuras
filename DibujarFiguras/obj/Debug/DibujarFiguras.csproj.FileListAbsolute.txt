@@ -8,3 +8,13 @@ C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\o
 C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.pdb
 C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.FabricaDeFiguras.resources
 C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\DibujarFiguras\obj\Debug\DibujarFiguras.Grafica.resources
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\bin\Debug\DibujarFiguras.exe.config
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.exe
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.pdb
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\bin\Debug\DibujarFiguras.exe
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\bin\Debug\DibujarFiguras.pdb
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.csprojResolveAssemblyReference.cache
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.FabricaDeFiguras.resources
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.Grafica.resources
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.Properties.Resources.resources
+C:\Users\rigoberto\Documents\GitHub\Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.csproj.GenerateResource.Cache

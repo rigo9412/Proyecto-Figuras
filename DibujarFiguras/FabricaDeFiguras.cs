@@ -28,7 +28,7 @@ namespace DibujarFiguras
                         miFigura = new Linea((double)numA.Value, (double)numB.Value, (int)numXi.Value, (int)numXf.Value);
                         break;
                     case "Circulo":
-                        miFigura = new Circulo((int)numR.Value, (int)numOx.Value, (int)numOy.Value);
+                        miFigura = new Circulo((int)numR.Value, (int)numOx.Value, -1*(int)numOy.Value);
                         break;
                     case "Parabola":
                         miFigura = new Parabola((double)numA.Value, (double)numB.Value, (double)numC.Value, (int)numXi.Value, (int)numXf.Value, chkInvertir.Checked);
