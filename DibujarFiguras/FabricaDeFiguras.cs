@@ -33,6 +33,9 @@ namespace DibujarFiguras
                     case "Parabola":
                         miFigura = new Parabola((double)numA.Value, (double)numB.Value, (double)numC.Value, (int)numXi.Value, (int)numXf.Value, chkInvertir.Checked);
                         break;
+                    case "Elipse":
+                        miFigura = new Elipse((int)numOx.Value, -1 * (int)numOy.Value, (int)numA.Value, (int)numB.Value);
+                        break;
                 }
                 Grafica miGrafica = new Grafica(miFigura, (int)numPx.Value);
                 miGrafica.ShowDialog();
@@ -79,6 +82,18 @@ namespace DibujarFiguras
                     numXi.Enabled = true;
                     numXf.Enabled = true;
                     chkInvertir.Visible = true;
+                    break;
+                case "Elipse":
+                 
+                    numA.Enabled = true;
+                    numB.Enabled = true;
+                    numC.Enabled = false;
+                    numR.Enabled = false;
+                    numOx.Enabled = true;
+                    numOy.Enabled = true;
+                    numXi.Enabled = false;
+                    numXf.Enabled = false;
+                    chkInvertir.Visible = false;
                     break;
             }
         }

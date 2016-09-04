@@ -70,7 +70,8 @@
             this.cboTipo.Items.AddRange(new object[] {
             "Linea",
             "Circulo",
-            "Parabola"});
+            "Parabola",
+            "Elipse"});
             this.cboTipo.Location = new System.Drawing.Point(93, 6);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(271, 21);

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Circulo.cs" />
+    <Compile Include="Elipse.cs" />
     <Compile Include="FabricaDeFiguras.cs">
       <SubType>Form</SubType>
     </Compile>

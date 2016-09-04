@@ -36,7 +36,7 @@ namespace DibujarFiguras
                     float y2 = this.C2 - y;
                     formGraphics.DrawEllipse(miPincel, x + CentroX, y1 + CentroY, 1, 1);
                     formGraphics.DrawEllipse(miPincel, x + CentroX, y2 + CentroY, 1, 1);
-                    x = x + 0.20f;
+                    x = x + 0.10f;
                     // sw.WriteLine(string.Format("X:{0}\ty1:{1}\ty2:{2}", x + CentroX, y1 + CentroY, y2 + CentroY));
                 }
              miPincel.Dispose();
