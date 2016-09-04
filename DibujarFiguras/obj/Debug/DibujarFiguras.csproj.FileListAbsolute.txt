@@ -28,3 +28,13 @@ C:\Users\rigor\Source\Repos\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFig
 C:\Users\rigor\Source\Repos\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.Grafica.resources
 C:\Users\rigor\Source\Repos\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.Properties.Resources.resources
 C:\Users\rigor\Source\Repos\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.csproj.GenerateResource.Cache
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\bin\Debug\DibujarFiguras.exe.config
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.exe
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.pdb
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\bin\Debug\DibujarFiguras.exe
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\bin\Debug\DibujarFiguras.pdb
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.csprojResolveAssemblyReference.cache
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.FabricaDeFiguras.resources
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.Grafica.resources
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.Properties.Resources.resources
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\DibujarFiguras\obj\Debug\DibujarFiguras.csproj.GenerateResource.Cache
