@@ -33,6 +33,9 @@ namespace DibujarFiguras
                     case "Parabola":
                         miFigura = new Parabola((double)numA.Value, (double)numB.Value, (double)numC.Value, (int)numXi.Value, (int)numXf.Value, chkInvertir.Checked);
                         break;
+                    case "Hiperbola":
+                        miFigura = new Hiperbola((double)numA.Value, (double)numB.Value, (double)numC.Value, (int)numOx.Value, (int)numOy.Value, (int)numXi.Value, (int)numXf.Value, chkInvertir.Checked);
+                        break;
                     case "Elipse":
                         miFigura = new Elipse((int)numOx.Value, -1 * (int)numOy.Value, (int)numA.Value, (int)numB.Value);
                         break;
@@ -76,6 +79,17 @@ namespace DibujarFiguras
                     numA.Enabled = true;
                     numB.Enabled = true;
                     numC.Enabled = true;
+                    numR.Enabled = false;
+                    numOx.Enabled = true;
+                    numOy.Enabled = true;
+                    numXi.Enabled = true;
+                    numXf.Enabled = true;
+                    chkInvertir.Visible = true;
+                    break;
+                case "Hiperbola":
+                    numA.Enabled = true;
+                    numB.Enabled = true;
+                    numC.Enabled = false;
                     numR.Enabled = false;
                     numOx.Enabled = true;
                     numOy.Enabled = true;

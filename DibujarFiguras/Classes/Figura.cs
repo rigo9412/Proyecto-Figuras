@@ -13,7 +13,7 @@ namespace DibujarFiguras
         public Pen miPincel = new Pen(Color.Red);
         public double a, b, c; //Variables dentro de las funciones
         public int r; //radio de las circunferencias
-        public int C1, C2; //Rango de valores para X , Cordenadas de origen
+        public int C1, C2, X1, X2; //Rango de valores para X , Cordenadas de origen
 
         public abstract void Dibujar(int CentroX, int CentroY, ref Graphics formGraphics, int px);
     }
