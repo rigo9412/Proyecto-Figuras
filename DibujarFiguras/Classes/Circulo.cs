@@ -21,23 +21,15 @@ namespace DibujarFiguras
         public override void Dibujar(int CentroX, int CentroY, ref Graphics formGraphics, int px)
         {
             miPincel = new Pen(Color.Red, 1);
-            //r^2 = x^2 + y^2
-            //y^2 = r^2 - x^2
-            //StreamWriter sw = new StreamWriter("debug Circulo.txt", false);
-            //sw.WriteLine("Graficar despejando Y");
-         
             float x = this.C1 - this.r;
-                //MessageBox.Show((this.r * px).ToString());
-                //MessageBox.Show(x.ToString());
             while (x <= this.C1 + this.r)
                 {
                     float y = (float)Math.Sqrt((Math.Pow((this.r), 2) - Math.Pow(x - this.C1, 2)));
                     float y1 = y + this.C2;
                     float y2 = this.C2 - y;
-                    formGraphics.DrawEllipse(miPincel, x + CentroX, y1 + CentroY, 1, 1);
-                    formGraphics.DrawEllipse(miPincel, x + CentroX, y2 + CentroY, 1, 1);
-                    x = x + 0.10f;
-                    // sw.WriteLine(string.Format("X:{0}\ty1:{1}\ty2:{2}", x + CentroX, y1 + CentroY, y2 + CentroY));
+                    formGraphics.DrawEllipse(miPincel, x * px + CentroX, y1 * px + CentroY, 1, 1);
+                    formGraphics.DrawEllipse(miPincel, x * px + CentroX, y2 * px + CentroY, 1, 1);
+                    x = x + 0.002f;
                 }
              miPincel.Dispose();
             formGraphics.Dispose();

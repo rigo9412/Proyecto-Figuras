@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Circulo.cs" />
-    <Compile Include="Elipse.cs" />
+    <Compile Include="Classes\Elipse.cs" />
     <Compile Include="FabricaDeFiguras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,7 +62,8 @@
       <DependentUpon>Grafica.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Linea.cs" />
-    <Compile Include="Parabola.cs" />
+    <Compile Include="Classes\Parabola.cs" />
+    <Compile Include="Classes\Hiperbola.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FabricaDeFiguras.resx">
