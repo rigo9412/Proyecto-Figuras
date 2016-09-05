@@ -384,13 +384,12 @@
             // chkInvertir
             // 
             this.chkInvertir.AutoSize = true;
-            this.chkInvertir.Location = new System.Drawing.Point(297, 43);
+            this.chkInvertir.Location = new System.Drawing.Point(400, 89);
             this.chkInvertir.Name = "chkInvertir";
             this.chkInvertir.Size = new System.Drawing.Size(73, 17);
             this.chkInvertir.TabIndex = 26;
             this.chkInvertir.Text = "Graficar X";
-            this.chkInvertir.UseVisualStyleBackColor = true;
-            this.chkInvertir.Visible = false;
+            this.chkInvertir.UseVisualStyleBackColor = false;
             // 
             // label12
             // 

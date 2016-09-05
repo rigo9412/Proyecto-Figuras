@@ -27,8 +27,8 @@ namespace DibujarFiguras
                 float y = (float)Math.Sqrt(Math.Pow(this.b,2)*(1-(Math.Pow((x-this.C1),2)/ Math.Pow(this.a, 2))));
                 float y1 = y + this.C2;
                 float y2 = this.C2 - y;
-                formGraphics.DrawEllipse(miPincel, x + CentroX, y1 + CentroY, 1, 1);
-                formGraphics.DrawEllipse(miPincel, x + CentroX, y2 + CentroY, 1, 1);
+                formGraphics.DrawEllipse(miPincel, x * px + CentroX, y1 * px + CentroY, 1, 1);
+                formGraphics.DrawEllipse(miPincel, x * px + CentroX, y2 * px + CentroY, 1, 1);
                  x =x + 0.10f;
             }
             miPincel.Dispose();

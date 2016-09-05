@@ -46,23 +46,51 @@ namespace DibujarFiguras
         public override void Dibujar(int CentroX, int CentroY, ref Graphics formGraphics, int px)
         {
             miPincel = new Pen(Color.Red, 1);
-
-            float coorx = this.X1;
-            while (coorx <= this.X2)
+            float coorX1 = this. C1+(float)this.a;//Calcular los extremos de la hiperbola
+            float coorX2 = this.C1 - (float)this.a;
+            float y1, y2,y;
+            float rangoI = coorX1+X2;
+            float rangoF = coorX2+X1;
+      
+            if (Vertical)
             {
-                float coory = (float)(this.b / this.a) * (coorx - this.C1);
-                if (!Vertical)
+                //Son los rangos x1 = inicio x2 = fin
+                while (coorX1 <= rangoI && coorX2 >= rangoF)
                 {
-                    //MessageBox.Show(coorx + "\t" + coory);
-                    formGraphics.DrawEllipse(miPincel, coorx * px + CentroX, coory * px * -1 + CentroY, 1, 1);
-                    formGraphics.DrawEllipse(miPincel, coorx * px + CentroX, coory * px + CentroY, 1, 1);
-                }
-                else
-                {
-                    formGraphics.DrawEllipse(miPincel, coory * px + CentroX, coorx * px + CentroY, 1, 1);
-                }
+                    y = (float)Math.Sqrt(((Math.Pow(this.b, 2) * (1 - (Math.Pow(coorX1 - C1, 2) / Math.Pow(this.a, 2)))) / -1));
+                    y1 = y + this.C2;
+                    y2 = this.C2 - y;
 
-                coorx += 0.01f;
+                    //Formula para horizontal
+                    formGraphics.DrawEllipse(miPincel, coorX1 * px + CentroX, y1 * px + CentroY, 1, 1);
+                    formGraphics.DrawEllipse(miPincel, coorX1 * px + CentroX, y2 * px + CentroY, 1, 1);
+
+                    formGraphics.DrawEllipse(miPincel, coorX2 * px + CentroX, y1 * px + CentroY, 1, 1);
+                    formGraphics.DrawEllipse(miPincel, coorX2 * px + CentroX, y2 * px + CentroY, 1, 1);
+
+                    coorX1 += 0.10f;
+                    coorX2 -= 0.10f;
+                }
+            }
+            else
+            {
+                //Son los rangos x1 = inicio x2 = fin
+                while (coorX1 <= rangoI && coorX2 >= rangoF)
+                {
+                    y = (float)Math.Sqrt(((Math.Pow(this.b, 2) * (1 - (Math.Pow(coorX1 - C1, 2) / Math.Pow(this.a, 2)))) / -1));
+                    y1 = y + this.C2;
+                    y2 = this.C2 - y;
+
+                    //Formula para vertical
+                    formGraphics.DrawEllipse(miPincel, y1 * px + CentroX, coorX1 * px + CentroY, 1, 1);
+                    formGraphics.DrawEllipse(miPincel, y2 * px + CentroX, coorX1 * px + CentroY, 1, 1);
+
+                    formGraphics.DrawEllipse(miPincel, y1 * px + CentroX, coorX2 * px + CentroY, 1, 1);
+                    formGraphics.DrawEllipse(miPincel, y2 * px + CentroX, coorX2 * px + CentroY, 1, 1);
+
+                    coorX1 += 0.10f;
+                    coorX2 -= 0.10f;
+                }
             }
             miPincel.Dispose();
             formGraphics.Dispose();
