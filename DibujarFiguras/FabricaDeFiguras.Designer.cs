@@ -401,7 +401,10 @@
             this.chkInvertir.TabIndex = 26;
             this.chkInvertir.Text = "Graficar X";
             this.chkInvertir.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
             this.chkInvertir.CheckedChanged += new System.EventHandler(this.chkInvertir_CheckedChanged);
+=======
+>>>>>>> refs/remotes/origin/master
             // 
             // label12
             // 
