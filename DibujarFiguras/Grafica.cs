@@ -35,6 +35,7 @@ namespace DibujarFiguras
             
 
             miFigura.Dibujar(CentroX, CentroY, ref formGraphics, px);
+
         }
 
 

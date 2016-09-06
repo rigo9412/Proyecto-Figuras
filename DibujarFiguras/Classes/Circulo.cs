@@ -23,18 +23,23 @@ namespace DibujarFiguras
             miPincel = new Pen(Color.Red, 1);
             float x = this.C1 - this.r;
             while (x <= this.C1 + this.r)
-                {
-                    float y = (float)Math.Sqrt((Math.Pow((this.r), 2) - Math.Pow(x - this.C1, 2)));
-                    float y1 = y + this.C2;
-                    float y2 = this.C2 - y;
-                    formGraphics.DrawEllipse(miPincel, x * px + CentroX, y1 * px + CentroY, 1, 1);
-                    formGraphics.DrawEllipse(miPincel, x * px + CentroX, y2 * px + CentroY, 1, 1);
-                    x = x + 0.002f;
-                }
-             miPincel.Dispose();
+            {
+                float y = (float)Math.Sqrt((Math.Pow((this.r), 2) - Math.Pow(x - this.C1, 2)));
+                float y1 = y + this.C2;
+                float y2 = this.C2 - y;
+                formGraphics.DrawEllipse(miPincel, x * px + CentroX, y1 * px + CentroY, 1, 1);
+                formGraphics.DrawEllipse(miPincel, x * px + CentroX, y2 * px + CentroY, 1, 1);
+                x = x + 1.00f;
+            }
+            miPincel.Dispose();
             formGraphics.Dispose();
 
- 
+
+        }
+
+        public void DibujarC(int CentroX, int CentroY, int radio, ref Graphics formGraphics, int px)
+        {
+            
         }
     }
 }

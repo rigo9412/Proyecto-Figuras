@@ -27,10 +27,6 @@ namespace DibujarFiguras
         {
             miPincel = new Pen(Color.Red, 1);
 
-            //Y = aX^2 + bX + c
-            //X = aY^2 + bY + c
-            StreamWriter sw = new StreamWriter("debug Parabola.txt", false);
-            sw.WriteLine("Graficar despejando Y");
             float coorx = this.C1;
             while (coorx <= this.C2)
             {
@@ -40,22 +36,8 @@ namespace DibujarFiguras
                 else
                     formGraphics.DrawEllipse(miPincel, coory * px + CentroX, coorx * px + CentroY, 1, 1);
 
-                sw.WriteLine(string.Format("X:{0}\tY:{1}\t\tXg:{2}\tYg:{3}", coorx, coory, coorx * px, coory * px));
                 coorx += 0.01f;
             }
-
-            /*for (int xy = C1; xy <= C2; xy++)
-            {
-                //xy: x
-                float coorx = xy;
-                float coory = (float)(this.a * Math.Pow(xy, 2) + this.b * xy + this.c) * -1;
-                //MessageBox.Show(coorx.ToString() + ", " + coory.ToString());
-                formGraphics.DrawEllipse(miPincel, coorx * px + CentroX, coory * px + CentroY, 1, 1);
-                sw.WriteLine(string.Format("X:{0}\tY:{1}\t\tXg:{2}\tYg:{3}", coorx, coory, coorx * px, coory * px));
-
-            }/**/
-            sw.Close();
-            Process.Start("debug Parabola.txt");
             miPincel.Dispose();
             formGraphics.Dispose();
         }

@@ -53,6 +53,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.chkInvertir = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.lblFormula = new System.Windows.Forms.Label();
+            this.lblSust = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numC)).BeginInit();
@@ -118,7 +120,7 @@
             // 
             // btnGraficar
             // 
-            this.btnGraficar.Location = new System.Drawing.Point(57, 188);
+            this.btnGraficar.Location = new System.Drawing.Point(57, 250);
             this.btnGraficar.Name = "btnGraficar";
             this.btnGraficar.Size = new System.Drawing.Size(290, 55);
             this.btnGraficar.TabIndex = 13;
@@ -148,6 +150,7 @@
             0,
             0,
             0});
+            this.numA.ValueChanged += new System.EventHandler(this.numA_ValueChanged);
             // 
             // numB
             // 
@@ -171,6 +174,7 @@
             0,
             0,
             0});
+            this.numB.ValueChanged += new System.EventHandler(this.numB_ValueChanged);
             // 
             // numC
             // 
@@ -195,6 +199,7 @@
             0,
             0,
             0});
+            this.numC.ValueChanged += new System.EventHandler(this.numC_ValueChanged);
             // 
             // numXi
             // 
@@ -217,6 +222,7 @@
             0,
             0,
             -2147483648});
+            this.numXi.ValueChanged += new System.EventHandler(this.numXi_ValueChanged);
             // 
             // label5
             // 
@@ -248,6 +254,7 @@
             0,
             0,
             0});
+            this.numXf.ValueChanged += new System.EventHandler(this.numXf_ValueChanged);
             // 
             // label6
             // 
@@ -302,6 +309,7 @@
             0,
             0,
             0});
+            this.numPx.ValueChanged += new System.EventHandler(this.numPx_ValueChanged);
             // 
             // numR
             // 
@@ -320,6 +328,7 @@
             0,
             0,
             0});
+            this.numR.ValueChanged += new System.EventHandler(this.numR_ValueChanged);
             // 
             // label3
             // 
@@ -341,6 +350,7 @@
             this.numOy.Name = "numOy";
             this.numOy.Size = new System.Drawing.Size(50, 20);
             this.numOy.TabIndex = 24;
+            this.numOy.ValueChanged += new System.EventHandler(this.numOy_ValueChanged);
             // 
             // numOx
             // 
@@ -353,24 +363,25 @@
             this.numOx.Name = "numOx";
             this.numOx.Size = new System.Drawing.Size(50, 20);
             this.numOx.TabIndex = 23;
+            this.numOx.ValueChanged += new System.EventHandler(this.numOx_ValueChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(188, 136);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(14, 13);
+            this.label9.Size = new System.Drawing.Size(20, 13);
             this.label9.TabIndex = 22;
-            this.label9.Text = "X";
+            this.label9.Text = "Xo";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(278, 137);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(14, 13);
+            this.label10.Size = new System.Drawing.Size(20, 13);
             this.label10.TabIndex = 21;
-            this.label10.Text = "Y";
+            this.label10.Text = "Yo";
             // 
             // label11
             // 
@@ -390,6 +401,7 @@
             this.chkInvertir.TabIndex = 26;
             this.chkInvertir.Text = "Graficar X";
             this.chkInvertir.UseVisualStyleBackColor = false;
+            this.chkInvertir.CheckedChanged += new System.EventHandler(this.chkInvertir_CheckedChanged);
             // 
             // label12
             // 
@@ -400,11 +412,33 @@
             this.label12.TabIndex = 27;
             this.label12.Text = "Variables";
             // 
+            // lblFormula
+            // 
+            this.lblFormula.AutoSize = true;
+            this.lblFormula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFormula.Location = new System.Drawing.Point(78, 177);
+            this.lblFormula.Name = "lblFormula";
+            this.lblFormula.Size = new System.Drawing.Size(168, 20);
+            this.lblFormula.TabIndex = 28;
+            this.lblFormula.Text = "Formula: Y = aX + b";
+            // 
+            // lblSust
+            // 
+            this.lblSust.AutoSize = true;
+            this.lblSust.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSust.Location = new System.Drawing.Point(53, 197);
+            this.lblSust.Name = "lblSust";
+            this.lblSust.Size = new System.Drawing.Size(193, 20);
+            this.lblSust.TabIndex = 29;
+            this.lblSust.Text = "Sustitución: Y = 1X + 1";
+            // 
             // FabricaDeFiguras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 255);
+            this.ClientSize = new System.Drawing.Size(588, 317);
+            this.Controls.Add(this.lblSust);
+            this.Controls.Add(this.lblFormula);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.chkInvertir);
             this.Controls.Add(this.label11);
@@ -473,5 +507,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox chkInvertir;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblFormula;
+        private System.Windows.Forms.Label lblSust;
     }
 }

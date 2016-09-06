@@ -110,6 +110,84 @@ namespace DibujarFiguras
                     chkInvertir.Visible = false;
                     break;
             }
+            ActualizarFormula();
+        }
+
+        private void ActualizarFormula()
+        {
+            switch (cboTipo.Text)
+            {
+                case "Linea":
+                    lblFormula.Text = "Formula: Y = aX + b";
+                    lblSust.Text = string.Format("Sustitución: Y = {0}X + {1}", numA.Value, numB.Value);
+                    break;
+                case "Circulo":
+                    lblFormula.Text = "Formula: Y = ±(r^2 - (X - Xo)^2)";
+                    lblSust.Text = string.Format("Sustitución: Y1 = ({0}^2 - (X - {1})^2)\n                    Y2 = -({0}^2 - (X - {1})^2)", numR.Value, numOx.Value);
+                    break;
+                case "Parabola":
+                    lblFormula.Text = "Formula: Y = aX^2 + bX + c";
+                    lblSust.Text = string.Format("Sustitución: Y = {0}X^2 + {1}X + {2}", numA.Value, numB.Value, numC.Value);
+                    break;
+                case "Hiperbola":
+                    lblFormula.Text = "Formula: Y = ±√(b^2 * 1 - (Xi - Xo) + a^2) / -1";
+                    lblSust.Text = string.Format("Sustitución: Y = ±√({0}^2 * 1 - ({1} - {2}) + {3}^2) / -1", numB.Value, numXi.Value, numOx.Value, numA.Value);
+                    break;
+                case "Elipse":
+                    lblFormula.Text = "Formula: Y = ±√(b^2 * 1 - (Xi - Xo) + a^2)";
+                    lblSust.Text = string.Format("Sustitución: Y = ±√({0}^2 * 1 - ({1} - {2}) + {3}^2)", numB.Value, numXi.Value, numOx.Value, numA.Value);
+                    break;
+            }
+        }
+
+        private void numA_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numB_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numC_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numR_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numXi_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numXf_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numOx_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numOy_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void numPx_ValueChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
+        }
+
+        private void chkInvertir_CheckedChanged(object sender, EventArgs e)
+        {
+            ActualizarFormula();
         }
     }
 }
