@@ -12,10 +12,9 @@ using System.IO;
 
 namespace GraficacionWPF
 {
-    class Circulo
+    class Circulo : Figura
     {
-        int r, C1, C2;
-        public double centrox = 0, centroy = 0;
+       
         public Circulo(int r, int C1, int C2)
         {
             this.r = r; //redio del circulo
@@ -23,8 +22,9 @@ namespace GraficacionWPF
             this.C2 = C2; //centro del circulo y
         }
 
-        public void Dibujar(ref Canvas miCanvas, int px = 1)
+        public override void Dibujar(double centroX, double centroY, ref Canvas miCanvas, int px=1)
         {
+
             float x = this.C1 - this.r;
 
             while (x <= this.C1 + this.r)
@@ -38,17 +38,18 @@ namespace GraficacionWPF
                 miRect.Width = 2;
                 miRect.Height = 2;
                 miRect.Fill = Brushes.Red;
-                Canvas.SetLeft(miRect, x + centrox);
-                Canvas.SetTop(miRect, y + centroy);
+                Canvas.SetLeft(miRect, x + centroX);
+                Canvas.SetTop(miRect, y1 + centroY);
                 //MessageBox.Show(x + ", " + y);
                 miCanvas.Children.Add(miRect);
+
                 //mitad de arriba
                 Rectangle miRect2 = new Rectangle();
                 miRect2.Width = 2;
                 miRect2.Height = 2;
                 miRect2.Fill = Brushes.Red;
-                Canvas.SetLeft(miRect2, x + centrox);
-                Canvas.SetTop(miRect2, y * -1 + centroy);
+                Canvas.SetLeft(miRect2, x + centroX);
+                Canvas.SetTop(miRect2, y2 + centroY);
                 //MessageBox.Show(x + ", " + -y);
                 miCanvas.Children.Add(miRect2);
 

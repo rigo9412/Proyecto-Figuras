@@ -27,10 +27,33 @@ namespace GraficacionWPF
 
         private void btnGraficar_Click(object sender, RoutedEventArgs e)
         {
-            Circulo miCirculo = new Circulo(int.Parse(txtRadio.Text), int.Parse(txtXo.Text), int.Parse(txtYo.Text));
-            miCirculo.centrox = canvas1.Width / 2;
-            miCirculo.centroy = canvas1.Height / 2;
-            miCirculo.Dibujar(ref canvas1);
+
+            Figura miFigura = null;
+            switch (cboxTipo.Text)
+            {
+                case "Linea":
+                    miFigura = new Linea(double.Parse(txtA.Text), double.Parse(txtB.Text), int.Parse(txtXi.Text), int.Parse(txtXf.Text));
+                    break;
+                case "Circulo":
+                     miFigura = new Circulo(int.Parse(txtRadio.Text), int.Parse(txtXo.Text), -1* int.Parse(txtYo.Text));
+                    break;
+                case "Parabola":
+                    miFigura = new Parabola(double.Parse(txtA.Text), double.Parse(txtB.Text), double.Parse(txtC.Text), int.Parse(txtXi.Text), int.Parse(txtXf.Text), chboxInvertir.IsChecked.Value);
+                    break;
+                case "Hiperbola":
+                    miFigura = new Hiperbola(double.Parse(txtA.Text), double.Parse(txtB.Text), double.Parse(txtC.Text), int.Parse(txtXo.Text), -1*int.Parse(txtXo.Text), int.Parse(txtXi.Text), int.Parse(txtXf.Text), chboxInvertir.IsChecked.Value);
+                    break;
+                case "Elipse":
+                    miFigura = new Elipse(int.Parse(txtXo.Text), -1*int.Parse(txtXo.Text), int.Parse(txtA.Text), int.Parse(txtB.Text));
+                    break;
+            }
+
+
+            miFigura.Dibujar((canvasCoor.Width / 2), (canvasCoor.Height / 2), ref canvasCoor, 10);
+
+
+
+
         }
     }
 }

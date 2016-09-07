@@ -12,3 +12,17 @@ C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\GraficacionWPF\o
 C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\GraficacionWPF\obj\Debug\GraficacionWPF.csproj.GenerateResource.Cache
 C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\GraficacionWPF\obj\Debug\GraficacionWPF.exe
 C:\Users\juan\documents\visual studio 2015\Projects\Graficacion\GraficacionWPF\obj\Debug\GraficacionWPF.pdb
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\bin\Debug\GraficacionWPF.exe.config
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF.exe
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF.pdb
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\bin\Debug\GraficacionWPF.exe
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\bin\Debug\GraficacionWPF.pdb
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF.csprojResolveAssemblyReference.cache
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\MainWindow.g.cs
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\App.g.cs
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF_MarkupCompile.cache
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF_MarkupCompile.lref
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\MainWindow.baml
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF.g.resources
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF.Properties.Resources.resources
+C:\Users\rigor\OneDrive\Documentos\GitHub\Proyecto-Figuras\GraficacionWPF\obj\Debug\GraficacionWPF.csproj.GenerateResource.Cache

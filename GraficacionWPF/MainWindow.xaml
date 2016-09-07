@@ -5,18 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GraficacionWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="600">
-    <Grid>
-        <Canvas x:Name="canvas1" Width="590" Height="316">
-            <Rectangle Canvas.Left="10" Canvas.Right="0" Canvas.Top="70" Height="2" Width="2" Fill="Black"/>
-            <TextBox x:Name="txtRadio" Height="23" Canvas.Left="51" TextWrapping="Wrap" Text="50" Canvas.Top="10" Width="120"/>
-            <Label x:Name="label" Content="Radio" Canvas.Left="8" Canvas.Top="7"/>
-            <TextBox x:Name="txtXo" Height="23" Canvas.Left="213" TextWrapping="Wrap" Text="100" Canvas.Top="10" Width="60"/>
+        Title="MainWindow" Height="948" Width="1000
+        ">
+    <Grid Margin="0,0,0,238">
+        <Canvas x:Name="canvas1" Margin="10,-1,10,492">
+            <TextBox x:Name="txtXo" Height="23" Canvas.Left="213" TextWrapping="Wrap" Text="1" Canvas.Top="10" Width="60"/>
             <Label x:Name="label_Copy" Content="Xo" Canvas.Left="189" Canvas.Top="7"/>
-            <TextBox x:Name="txtYo" Height="23" Canvas.Left="307" TextWrapping="Wrap" Text="100" Canvas.Top="11" Width="60"/>
+            <TextBox x:Name="txtYo" Height="23" Canvas.Left="307" TextWrapping="Wrap" Text="1" Canvas.Top="11" Width="60"/>
             <Label x:Name="label_Copy1" Content="Yo" Canvas.Left="278" Canvas.Top="7"/>
-            <Button x:Name="btnGraficar" Content="Graficar" Canvas.Left="380" Canvas.Top="14" Width="75" Click="btnGraficar_Click"/>
+            <Button x:Name="btnGraficar" Content="Graficar" Canvas.Left="307" Canvas.Top="145" Width="75" Click="btnGraficar_Click"/>
+            <ComboBox x:Name="cboxTipo" Canvas.Left="19" Canvas.Top="11" Width="156">
+                <ComboBoxItem Content="Linea" HorizontalAlignment="Left" Width="154"/>
+                <ComboBoxItem Content="Circulo" HorizontalAlignment="Left" Width="154"/>
+                <ComboBoxItem Content="Hiperbola" HorizontalAlignment="Left" Width="154"/>
+                <ComboBoxItem Content="Elipse" HorizontalAlignment="Left" Width="154"/>
+                <ComboBoxItem Content="Parabola" HorizontalAlignment="Left" Width="154"/>
+            </ComboBox>
+            <Label x:Name="label" Content="Radio" Canvas.Left="10" Canvas.Top="46"/>
+            <Label x:Name="label_Copy2" Content="A" Canvas.Left="10" Canvas.Top="77"/>
+            <Label x:Name="label_Copy3" Content="B" Canvas.Left="10" Canvas.Top="108" RenderTransformOrigin="0.425,2.577"/>
+            <Label x:Name="label_Copy4" Content="C" Canvas.Left="10" Canvas.Top="139"/>
+            <TextBox x:Name="txtRadio" Height="23" Canvas.Left="55" TextWrapping="Wrap" Text="5" Canvas.Top="49" Width="120"/>
+            <TextBox x:Name="txtA" Height="23" Canvas.Left="55" TextWrapping="Wrap" Text="5" Canvas.Top="81" Width="120"/>
+            <TextBox x:Name="txtB" Height="23" Canvas.Left="55" TextWrapping="Wrap" Text="5" Canvas.Top="112" Width="120"/>
+            <TextBox x:Name="txtC" Height="23" Canvas.Left="55" TextWrapping="Wrap" Text="5" Canvas.Top="142" Width="120"/>
+            <CheckBox x:Name="chboxInvertir" Content="Graficar con Respecto a X" Canvas.Left="201" Canvas.Top="49"/>
+            <TextBox x:Name="txtXf" Height="23" Canvas.Left="307" TextWrapping="Wrap" Text="50" Canvas.Top="81" Width="30"/>
+            <TextBox x:Name="txtXi" Height="23" Canvas.Left="230" TextWrapping="Wrap" Text="50" Canvas.Top="81" Width="30" RenderTransformOrigin="-0.8,0.435"/>
+            <Label x:Name="label_Copy5" Content="Xi" Canvas.Left="201" Canvas.Top="81"/>
+            <Label x:Name="label_Copy6" Content="Xf" Canvas.Left="278" Canvas.Top="81" RenderTransformOrigin="3.167,3.038"/>
+
+
+            <Canvas Name="canvasCoor" Margin="10,0,10,-245" RenderTransformOrigin="0.629,0.441" Height="732" VerticalAlignment="Bottom">
+
+            </Canvas>
         </Canvas>
     </Grid>
+ 
 </Window>
  
