@@ -63,6 +63,8 @@ namespace GraficacionWPF
                     //MessageBox.Show(x + ", " + y);
                     miCanvas.Children.Add(miRect);
                     //mitad de arriba
+
+
                     Rectangle miRect2 = new Rectangle();
                     miRect2.Width = 2;
                     miRect2.Height = 2;
@@ -72,26 +74,25 @@ namespace GraficacionWPF
                     //MessageBox.Show(x + ", " + -y);
                     miCanvas.Children.Add(miRect2);
 
-
-
-
                     Rectangle miRect3 = new Rectangle();
-                    miRect.Width = 2;
-                    miRect.Height = 2;
-                    miRect.Fill = Brushes.Red;
-                    Canvas.SetLeft(miRect, coorX2 + centroX);
-                    Canvas.SetTop(miRect, y1 + centroY);
+                    miRect3.Width = 2;
+                    miRect3.Height = 2;
+                    miRect3.Fill = Brushes.Green;
+                    Canvas.SetLeft(miRect3, coorX2 + centroX);
+                    Canvas.SetTop(miRect3, y1 + centroY);
                     //MessageBox.Show(x + ", " + y);
-                    miCanvas.Children.Add(miRect);
+                    miCanvas.Children.Add(miRect3);
                     //mitad de arriba
+
+
                     Rectangle miRect4= new Rectangle();
-                    miRect2.Width = 2;
-                    miRect2.Height = 2;
-                    miRect2.Fill = Brushes.Red;
-                    Canvas.SetLeft(miRect2, coorX2 + centroX);
-                    Canvas.SetTop(miRect2, y2 + centroY);
+                    miRect4.Width = 2;
+                    miRect4.Height = 2;
+                    miRect4.Fill = Brushes.Green;
+                    Canvas.SetLeft(miRect4, coorX2 + centroX);
+                    Canvas.SetTop(miRect4, y2 + centroY);
                     //MessageBox.Show(x + ", " + -y);
-                    miCanvas.Children.Add(miRect2);
+                    miCanvas.Children.Add(miRect4);
 
                     coorX1 += 0.10f;
                     coorX2 -= 0.10f;
@@ -105,6 +106,46 @@ namespace GraficacionWPF
                     y = (float)Math.Sqrt(((Math.Pow(this.b, 2) * (1 - (Math.Pow(coorX1 - C1, 2) / Math.Pow(this.a, 2)))) / -1));
                     y1 = y + this.C2;
                     y2 = this.C2 - y;
+
+                    Rectangle miRect = new Rectangle();
+                    miRect.Width = 2;
+                    miRect.Height = 2;
+                    miRect.Fill = Brushes.Red;
+                    Canvas.SetLeft(miRect, y1 + centroX);
+                    Canvas.SetTop(miRect, coorX1 + centroY);
+                    //MessageBox.Show(x + ", " + y);
+                    miCanvas.Children.Add(miRect);
+                    //mitad de arriba
+
+
+                    Rectangle miRect2 = new Rectangle();
+                    miRect2.Width = 2;
+                    miRect2.Height = 2;
+                    miRect2.Fill = Brushes.Red;
+                    Canvas.SetLeft(miRect2, y2 + centroX);
+                    Canvas.SetTop(miRect2, coorX1 + centroY);
+                    //MessageBox.Show(x + ", " + -y);
+                    miCanvas.Children.Add(miRect2);
+
+                    Rectangle miRect3 = new Rectangle();
+                    miRect3.Width = 2;
+                    miRect3.Height = 2;
+                    miRect3.Fill = Brushes.Red;
+                    Canvas.SetLeft(miRect3, y1 + centroX);
+                    Canvas.SetTop(miRect3, coorX2 + centroY);
+                    //MessageBox.Show(x + ", " + y);
+                    miCanvas.Children.Add(miRect3);
+                    //mitad de arriba
+
+
+                    Rectangle miRect4 = new Rectangle();
+                    miRect4.Width = 2;
+                    miRect4.Height = 2;
+                    miRect4.Fill = Brushes.Red;
+                    Canvas.SetLeft(miRect4, y2 + centroX);
+                    Canvas.SetTop(miRect4, coorX2 + centroY);
+                    //MessageBox.Show(x + ", " + -y);
+                    miCanvas.Children.Add(miRect4);
 
                     //Formula para vertical
                     //formGraphics.DrawEllipse(miPincel, y1 * px + CentroX, coorX1 * px + CentroY, 1, 1);

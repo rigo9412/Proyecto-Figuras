@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="948" Width="1000
         ">
-    <Grid Margin="0,0,0,238">
+    <Grid Margin="0,0,0,732">
         <Canvas x:Name="canvas1" Margin="10,-1,10,492">
             <TextBox x:Name="txtXo" Height="23" Canvas.Left="213" TextWrapping="Wrap" Text="1" Canvas.Top="10" Width="60"/>
             <Label x:Name="label_Copy" Content="Xo" Canvas.Left="189" Canvas.Top="7"/>
@@ -36,11 +36,9 @@
             <Label x:Name="label_Copy6" Content="Xf" Canvas.Left="278" Canvas.Top="81" RenderTransformOrigin="3.167,3.038"/>
 
 
-            <Canvas Name="canvasCoor" Margin="10,0,10,-245" RenderTransformOrigin="0.629,0.441" Height="732" VerticalAlignment="Bottom">
-
-            </Canvas>
+            <Canvas Name="canvasCoor" RenderTransformOrigin="0.629,0.441" Height="488" VerticalAlignment="Bottom" Canvas.Left="10" Canvas.Top="244" Width="946"/>
         </Canvas>
     </Grid>
- 
+
 </Window>
  
