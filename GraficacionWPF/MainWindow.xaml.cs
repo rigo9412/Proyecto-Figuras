@@ -23,6 +23,24 @@ namespace GraficacionWPF
         public MainWindow()
         {
             InitializeComponent();
+            double centrox = canvasCoor.Width / 2;
+            double centroy = canvasCoor.Height / 2;
+            //eje X
+            Rectangle miRect = new Rectangle();
+            miRect.Width = canvasCoor.Width;
+            miRect.Height = 1;
+            miRect.Fill = Brushes.Red;
+            Canvas.SetLeft(miRect, 0);
+            Canvas.SetTop(miRect, centroy);
+            canvasCoor.Children.Add(miRect);
+            //eje Y
+            Rectangle miRect2 = new Rectangle();
+            miRect2.Width = 1;
+            miRect2.Height = canvasCoor.Height;
+            miRect2.Fill = Brushes.Red;
+            Canvas.SetLeft(miRect2, centrox);
+            Canvas.SetTop(miRect2, 0);
+            canvasCoor.Children.Add(miRect2);
         }
 
         private void btnGraficar_Click(object sender, RoutedEventArgs e)
